@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CATALYST — UAE digital solutions for websites, NFC cards, graphic design, video editing and small business websites.">
+    <meta name="theme-color" content="#050B1A">
+    <title>CATALYST — Ignite digital growth.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+         There is ONLY ONE logo on the homepage: this one.
+         ===================================================== -->
+    <header class="site-header">
+        <div class="navbar">
+
+            <a class="nav-brand" href="index.html" aria-label="CATALYST home">
+                <img
+                    class="nav-logo"
+                    src="assets/logo.png"
+                    alt="CATALYST"
+                    width="125"
+                    height="48"
+                >
+            </a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#work">Our Work</a>
+                <a class="nav-link" href="#why-us">Why CATALYST</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link nav-cta" href="#contact">Get a Quote</a>
+            </nav>
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+        <section class="hero-section" id="home">
+
+            <div class="hero-particles" aria-hidden="true">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="hero-kicker">
+                        <span class="status-dot"></span>
+                        Digital Solutions
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-line">WE BUILD.</span>
+                        <span class="title-line">
+                            YOU <span
+                                data-typing-words="GROW|STAND OUT|GET NOTICED"
+                            >GROW</span>.
+                        </span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        CATALYST creates powerful digital experiences, creative content
+                        and smart technology solutions designed to move your business forward.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#services">
+                            Explore Services
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+                        <a
+                            class="btn btn-secondary contact-whatsapp"
+                            href="#contact"
+                            data-whatsapp-link
+                            data-whatsapp-message="Hello CATALYST! I'd like to discuss a project."
+                        >
+                            Start a Project
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                        Fast&nbsp; • &nbsp;Professional&nbsp; • &nbsp;Creative
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             SERVICES
+             ================================================= -->
+        <section class="section category-section" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">What we do</span>
+                    <h2>Digital solutions built to move you forward.</h2>
+                    <p>
+                        Choose a service and explore exactly what CATALYST can create for you.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <a class="category-card" href="nfc-cards.html">
+                        <div class="category-icon">NFC</div>
+                        <h3>NFC Cards</h3>
+                        <p>Smart digital networking cards that make sharing your details effortless.</p>
+                        <div class="category-arrow"><span>→</span></div>
+                    </a>
+
+                    <a class="category-card" href="website-creation.html">
+                        <div class="category-icon">WEB</div>
+                        <h3>Website Creation</h3>
+                        <p>Modern responsive websites designed around your brand and business goals.</p>
+                        <div class="category-arrow"><span>→</span></div>
+                    </a>
+
+                    <a class="category-card" href="graphic-designing.html">
+                        <div class="category-icon">GFX</div>
+                        <h3>Graphic Designing</h3>
+                        <p>Professional graphics for social media, marketing, branding and more.</p>
+                        <div class="category-arrow"><span>→</span></div>
+                    </a>
+
+                    <a class="category-card" href="video-editing.html">
+                        <div class="category-icon">VID</div>
+                        <h3>Video Editing</h3>
+                        <p>Clean, engaging edits for reels, social content, promotions and business videos.</p>
+                        <div class="category-arrow"><span>→</span></div>
+                    </a>
+
+                    <a class="category-card" href="small-websites.html">
+                        <div class="category-icon">SITE</div>
+                        <h3>Menu &amp; Small Websites</h3>
+                        <p>Affordable, fast websites for menus, portfolios, campaigns and small businesses.</p>
+                        <div class="category-arrow"><span>→</span></div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             STATS
+             ================================================= -->
+        <section class="stats-strip" aria-label="CATALYST highlights">
+            <div class="container stats-grid">
+
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100" data-suffix="+">100+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50" data-suffix="+">50+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24" data-suffix="h">24h</span>
+                    <span class="stat-label">Response</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100" data-suffix="%">100%</span>
+                    <span class="stat-label">Custom</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             OUR WORK
+             IMPORTANT: put your real demo files in /assets/
+             as demo1.jpg, demo2.jpg, demo3.jpg, demo4.jpg.
+             The script below also tries PNG/JPEG/WEBP.
+             ================================================= -->
+        <section class="section work-section" id="work">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Our work</span>
+                    <h2>Ideas turned into impact.</h2>
+                    <p>
+                        A selection of digital work and creative solutions by CATALYST.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <a class="gallery-card" href="assets/demo1.jpg" data-lightbox>
+                        <img
+                            class="gallery-image demo-image"
+                            src="assets/demo1.jpg"
+                            data-demo-base="demo1"
+                            alt="CATALYST project demo 1"
+                            loading="lazy"
+                        >
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Project 01</span>
+                            <h3 class="gallery-title">Digital Experience</h3>
+                            <p class="gallery-description">A polished digital solution built around a clear customer experience.</p>
+                        </div>
+                        <span class="gallery-zoom" aria-hidden="true">+</span>
+                    </a>
+
+                    <a class="gallery-card" href="assets/demo2.jpg" data-lightbox>
+                        <img
+                            class="gallery-image demo-image"
+                            src="assets/demo2.jpg"
+                            data-demo-base="demo2"
+                            alt="CATALYST project demo 2"
+                            loading="lazy"
+                        >
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Project 02</span>
+                            <h3 class="gallery-title">Brand Creative</h3>
+                            <p class="gallery-description">Creative visuals designed to make a brand more memorable.</p>
+                        </div>
+                        <span class="gallery-zoom" aria-hidden="true">+</span>
+                    </a>
+
+                    <a class="gallery-card" href="assets/demo3.jpg" data-lightbox>
+                        <img
+                            class="gallery-image demo-image"
+                            src="assets/demo3.jpg"
+                            data-demo-base="demo3"
+                            alt="CATALYST project demo 3"
+                            loading="lazy"
+                        >
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Project 03</span>
+                            <h3 class="gallery-title">Web Design</h3>
+                            <p class="gallery-description">A responsive web concept focused on clarity, speed and visual impact.</p>
+                        </div>
+                        <span class="gallery-zoom" aria-hidden="true">+</span>
+                    </a>
+
+                    <a class="gallery-card" href="assets/demo4.jpg" data-lightbox>
+                        <img
+                            class="gallery-image demo-image"
+                            src="assets/demo4.jpg"
+                            data-demo-base="demo4"
+                            alt="CATALYST project demo 4"
+                            loading="lazy"
+                        >
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Project 04</span>
+                            <h3 class="gallery-title">Creative Content</h3>
+                            <p class="gallery-description">Content created to communicate a business message with impact.</p>
+                        </div>
+                        <span class="gallery-zoom" aria-hidden="true">+</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             WHY CATALYST
+             ================================================= -->
+        <section class="section section-dark" id="why-us">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Why CATALYST</span>
+                    <h2>Built for businesses that want to stand out.</h2>
+                    <p>
+                        We combine creative thinking, practical technology and a strong focus on your goals.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Modern Design</h3>
+                        <p>Clean, futuristic visuals that make your business look professional and memorable.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>Practical Solutions</h3>
+                        <p>Every project is designed around what your customers actually need to do.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>Responsive Results</h3>
+                        <p>Digital experiences designed to work smoothly across desktop, tablet and mobile.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">04</div>
+                        <h3>Custom Approach</h3>
+                        <p>Your project is shaped around your brand instead of forcing your business into a template.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CONTACT
+             ================================================= -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="contact-panel">
+                    <div class="contact-grid">
+
+                        <div class="contact-copy">
+                            <span class="eyebrow">Start a project</span>
+                            <h2>Let's build something that moves your business forward.</h2>
+                            <p>
+                                Tell us what you need and we'll help you choose the right CATALYST service.
+                            </p>
+
+                            <div class="contact-details">
+                                <div class="contact-detail">
+                                    <div class="contact-detail-icon">☎</div>
+                                    <div>
+                                        <h3>Phone / WhatsApp</h3>
+                                        <p><span>[YOUR PHONE / WHATSAPP]</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail">
+                                    <div class="contact-detail-icon">@</div>
+                                    <div>
+                                        <h3>Email</h3>
+                                        <p><span>[YOUR EMAIL]</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail">
+                                    <div class="contact-detail-icon">⌖</div>
+                                    <div>
+                                        <h3>Location</h3>
+                                        <p><span>[YOUR LOCATION]</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a
+                                class="btn btn-whatsapp contact-whatsapp"
+                                href="#"
+                                data-whatsapp-link
+                                data-whatsapp-message="Hello CATALYST! I'd like to discuss a project."
+                            >
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+
+                        <form class="contact-form" id="contactForm">
+                            <div>
+                                <label for="name">Your name</label>
+                                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                            </div>
+
+                            <div>
+                                <label for="phone">Phone / WhatsApp</label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your number">
+                            </div>
+
+                            <div>
+                                <label for="service">Service</label>
+                                <select id="service" name="service">
+                                    <option value="">Choose a service</option>
+                                    <option value="NFC Cards">NFC Cards</option>
+                                    <option value="Website Creation">Website Creation</option>
+                                    <option value="Graphic Designing">Graphic Designing</option>
+                                    <option value="Video Editing">Video Editing</option>
+                                    <option value="Menu / Small Website">Menu / Small Website</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message">Tell us about your project</label>
+                                <textarea id="message" name="message" rows="6" placeholder="What would you like us to create?"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary btn-wide" type="submit">
+                                Send Enquiry
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html" aria-label="CATALYST home">
+                        <img src="assets/logo.png" alt="CATALYST" width="100" height="34">
+                    </a>
+                    <p>
+                        CATALYST creates digital experiences, creative content and smart technology solutions.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="nfc-cards.html">NFC Cards</a></li>
+                        <li><a href="website-creation.html">Website Creation</a></li>
+                        <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                        <li><a href="video-editing.html">Video Editing</a></li>
+                        <li><a href="small-websites.html">Small Websites</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    Every project is fully customized by our expert team.
+                </p>
+                <p>
+                    © <span id="current-year">2026</span> CATALYST. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <script src="js/script.js" defer></script>
+
+    <script>
+        /* Keep the footer year current. */
+        const yearElement = document.getElementById("current-year");
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        /*
+           Demo image loader.
+           If demo1.jpg is not present, it automatically tries:
+           demo1.jpeg -> demo1.png -> demo1.webp.
+           This fixes the common JPG/PNG filename mismatch.
+        */
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".demo-image").forEach(function (img) {
+                const base = img.dataset.demoBase;
+                const extensions = ["jpg", "jpeg", "png", "webp"];
+                let index = 0;
+
+                function tryNextImage() {
+                    if (index >= extensions.length) {
+                        img.style.display = "none";
+                        return;
+                    }
+
+                    const extension = extensions[index++];
+                    const nextSource = "assets/" + base + "." + extension;
+
+                    if (img.getAttribute("src") === nextSource) {
+                        tryNextImage();
+                        return;
+                    }
+
+                    img.src = nextSource;
+                }
+
+                img.addEventListener("error", tryNextImage);
+
+                /* Start with JPG; the error handler tries the other formats. */
+                img.src = "assets/" + base + ".jpg";
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,3537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="CATALYST Menu Websites and Small Websites in UAE. Professional, mobile-friendly websites starting from AED 100–150."
+    >
+
+    <meta
+        name="keywords"
+        content="menu website UAE, small website UAE, digital menu UAE, restaurant menu website, CATALYST"
+    >
+
+    <meta name="author" content="CATALYST">
+
+    <meta property="og:title" content="Menu Websites & Small Websites | CATALYST">
+
+    <meta
+        property="og:description"
+        content="Simple, modern and mobile-friendly websites by CATALYST starting from AED 100–150."
+    >
+
+    <meta property="og:type" content="website">
+
+    <title>Menu Websites & Small Websites | CATALYST</title>
+
+
+    <!-- =====================================================
+         FAVICON
+         ===================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN CATALYST CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =====================================================
+         PAGE-SPECIFIC CSS
+         ===================================================== -->
+
+    <style>
+
+        /* =================================================
+           VARIABLES
+           ================================================= */
+
+        .small-site-page {
+
+            --small-blue: #00d4ff;
+
+            --small-electric: #2f6bff;
+
+            --small-dark: #050b1a;
+
+            --small-card:
+                rgba(9, 20, 48, 0.72);
+
+            --small-border:
+                rgba(0, 212, 255, 0.18);
+
+        }
+
+
+        /* =================================================
+           HERO
+           ================================================= */
+
+        .small-site-hero {
+
+            min-height: 88vh;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                130px
+                20px
+                80px;
+
+        }
+
+
+        .small-site-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 520px;
+
+            height: 520px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(0, 212, 255, 0.08);
+
+            filter: blur(110px);
+
+            top: -180px;
+
+            left: -170px;
+
+            pointer-events: none;
+
+        }
+
+
+        .small-site-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 480px;
+
+            height: 480px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(47, 107, 255, 0.10);
+
+            filter: blur(110px);
+
+            right: -180px;
+
+            bottom: -180px;
+
+            pointer-events: none;
+
+        }
+
+
+        .small-site-container {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .small-site-back {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            color:
+                rgba(255,255,255,0.65);
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            margin-bottom: 35px;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .small-site-back:hover {
+
+            color: var(--small-blue);
+
+            transform:
+                translateX(-5px);
+
+        }
+
+
+        .small-site-hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .small-site-label {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                8px
+                14px;
+
+            border:
+                1px solid
+                rgba(0,212,255,0.25);
+
+            border-radius: 999px;
+
+            background:
+                rgba(0,212,255,0.05);
+
+            color:
+                var(--small-blue);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .small-site-label-dot {
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background:
+                var(--small-blue);
+
+            box-shadow:
+                0 0 13px
+                var(--small-blue);
+
+            animation:
+                smallDotPulse
+                1.6s
+                infinite;
+
+        }
+
+
+        @keyframes smallDotPulse {
+
+            0%,
+            100% {
+
+                opacity: 1;
+
+                transform:
+                    scale(1);
+
+            }
+
+            50% {
+
+                opacity: 0.4;
+
+                transform:
+                    scale(0.7);
+
+            }
+
+        }
+
+
+        .small-site-hero h1 {
+
+            font-family:
+                "Orbitron",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    40px,
+                    6vw,
+                    72px
+                );
+
+            line-height:
+                1.03;
+
+            letter-spacing:
+                -2px;
+
+            margin:
+                0
+                0
+                24px;
+
+            color:
+                #ffffff;
+
+        }
+
+
+        .small-site-hero h1 span {
+
+            color:
+                var(--small-blue);
+
+            text-shadow:
+                0 0 18px
+                rgba(0,212,255,0.38),
+
+                0 0 42px
+                rgba(0,212,255,0.18);
+
+        }
+
+
+        .small-site-description {
+
+            max-width: 610px;
+
+            color:
+                rgba(255,255,255,0.67);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            margin:
+                0
+                0
+                30px;
+
+        }
+
+
+        .small-site-actions {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+        }
+
+
+        .small-site-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding:
+                14px
+                23px;
+
+            border-radius: 12px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            transition:
+                0.3s ease;
+
+        }
+
+
+        .small-site-button:hover {
+
+            transform:
+                translateY(-4px);
+
+        }
+
+
+        .small-site-button-primary {
+
+            color:
+                #ffffff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--small-blue),
+                    var(--small-electric)
+                );
+
+            box-shadow:
+                0 12px 35px
+                rgba(0,212,255,0.17);
+
+        }
+
+
+        .small-site-button-primary:hover {
+
+            box-shadow:
+                0 17px 45px
+                rgba(0,212,255,0.28);
+
+        }
+
+
+        .small-site-button-secondary {
+
+            color:
+                #ffffff;
+
+            background:
+                rgba(255,255,255,0.03);
+
+            border:
+                1px solid
+                rgba(0,212,255,0.23);
+
+        }
+
+
+        .small-site-button-secondary:hover {
+
+            color:
+                var(--small-blue);
+
+            border-color:
+                var(--small-blue);
+
+        }
+
+
+        /* =================================================
+           WEBSITE MOCKUP
+           ================================================= */
+
+        .small-site-mockup-wrapper {
+
+            perspective:
+                1200px;
+
+        }
+
+
+        .small-site-mockup {
+
+            border:
+                1px solid
+                rgba(0,212,255,0.22);
+
+            border-radius:
+                22px;
+
+            overflow:
+                hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(12,27,60,0.96),
+                    rgba(4,10,25,0.98)
+                );
+
+            box-shadow:
+                0 30px 80px
+                rgba(0,0,0,0.35),
+
+                0 0 55px
+                rgba(0,212,255,0.05);
+
+            transform:
+                rotateY(-5deg)
+                rotateX(2deg);
+
+            transition:
+                transform
+                0.5s
+                ease;
+
+        }
+
+
+        .small-site-mockup-wrapper:hover
+        .small-site-mockup {
+
+            transform:
+                rotateY(0deg)
+                rotateX(0deg)
+                translateY(-8px);
+
+        }
+
+
+        .mockup-browser {
+
+            height:
+                45px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap: 7px;
+
+            padding:
+                0
+                15px;
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.06);
+
+        }
+
+
+        .mockup-browser-dot {
+
+            width:
+                8px;
+
+            height:
+                8px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(255,255,255,0.18);
+
+        }
+
+
+        .mockup-browser-url {
+
+            margin-left:
+                10px;
+
+            flex: 1;
+
+            height:
+                24px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            padding:
+                0
+                10px;
+
+            border-radius:
+                6px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            color:
+                rgba(255,255,255,0.27);
+
+            font-size:
+                8px;
+
+        }
+
+
+        .mockup-body {
+
+            padding:
+                20px;
+
+        }
+
+
+        .mockup-nav {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            margin-bottom:
+                22px;
+
+        }
+
+
+        .mockup-logo {
+
+            width:
+                75px;
+
+            height:
+                9px;
+
+            border-radius:
+                20px;
+
+            background:
+                var(--small-blue);
+
+            box-shadow:
+                0 0 15px
+                rgba(0,212,255,0.22);
+
+        }
+
+
+        .mockup-nav-lines {
+
+            display:
+                flex;
+
+            gap:
+                7px;
+
+        }
+
+
+        .mockup-nav-lines span {
+
+            display:
+                block;
+
+            width:
+                25px;
+
+            height:
+                5px;
+
+            border-radius:
+                20px;
+
+            background:
+                rgba(255,255,255,0.10);
+
+        }
+
+
+        .mockup-hero-card {
+
+            min-height:
+                175px;
+
+            border-radius:
+                13px;
+
+            padding:
+                24px;
+
+            display:
+                flex;
+
+            flex-direction:
+                column;
+
+            justify-content:
+                center;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(0,212,255,0.25),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #091a3a,
+                    #101f4b
+                );
+
+            border:
+                1px solid
+                rgba(0,212,255,0.12);
+
+        }
+
+
+        .mockup-small-text {
+
+            width:
+                80px;
+
+            height:
+                6px;
+
+            border-radius:
+                10px;
+
+            background:
+                rgba(0,212,255,0.65);
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .mockup-large-text {
+
+            width:
+                72%;
+
+            height:
+                16px;
+
+            border-radius:
+                10px;
+
+            background:
+                rgba(255,255,255,0.86);
+
+            margin-bottom:
+                9px;
+
+        }
+
+
+        .mockup-large-text.short {
+
+            width:
+                48%;
+
+        }
+
+
+        .mockup-description {
+
+            width:
+                70%;
+
+            height:
+                6px;
+
+            border-radius:
+                10px;
+
+            background:
+                rgba(255,255,255,0.16);
+
+            margin-bottom:
+                18px;
+
+        }
+
+
+        .mockup-button {
+
+            width:
+                85px;
+
+            height:
+                24px;
+
+            border-radius:
+                6px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--small-blue),
+                    var(--small-electric)
+                );
+
+        }
+
+
+        .mockup-menu-title {
+
+            margin:
+                18px
+                0
+                12px;
+
+            color:
+                rgba(255,255,255,0.8);
+
+            font-size:
+                10px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                1.5px;
+
+        }
+
+
+        .mockup-menu-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                8px;
+
+        }
+
+
+        .mockup-menu-item {
+
+            height:
+                55px;
+
+            border-radius:
+                8px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.06);
+
+            background:
+                rgba(255,255,255,0.035);
+
+        }
+
+
+        /* =================================================
+           GENERAL SECTION
+           ================================================= */
+
+        .small-site-section {
+
+            padding:
+                90px
+                20px;
+
+        }
+
+
+        .small-site-section-container {
+
+            width:
+                100%;
+
+            max-width:
+                1150px;
+
+            margin:
+                0 auto;
+
+        }
+
+
+        .small-site-heading {
+
+            max-width:
+                720px;
+
+            margin-bottom:
+                45px;
+
+        }
+
+
+        .small-site-heading-label {
+
+            color:
+                var(--small-blue);
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .small-site-heading h2 {
+
+            color:
+                #ffffff;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    30px,
+                    4vw,
+                    48px
+                );
+
+            line-height:
+                1.1;
+
+            margin:
+                0
+                0
+                15px;
+
+        }
+
+
+        .small-site-heading p {
+
+            color:
+                rgba(255,255,255,0.55);
+
+            line-height:
+                1.75;
+
+            margin:
+                0;
+
+        }
+
+
+        /* =================================================
+           FEATURES
+           ================================================= */
+
+        .small-site-features {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                18px;
+
+        }
+
+
+        .small-site-feature {
+
+            padding:
+                28px;
+
+            border:
+                1px solid
+                var(--small-border);
+
+            border-radius:
+                18px;
+
+            background:
+                var(--small-card);
+
+            backdrop-filter:
+                blur(14px);
+
+            transition:
+                0.35s
+                ease;
+
+        }
+
+
+        .small-site-feature:hover {
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                rgba(0,212,255,0.42);
+
+            box-shadow:
+                0 18px 45px
+                rgba(0,212,255,0.07);
+
+        }
+
+
+        .small-site-feature-icon {
+
+            width:
+                48px;
+
+            height:
+                48px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(0,212,255,0.07);
+
+            border:
+                1px solid
+                rgba(0,212,255,0.17);
+
+            color:
+                var(--small-blue);
+
+            margin-bottom:
+                19px;
+
+        }
+
+
+        .small-site-feature h3 {
+
+            color:
+                #ffffff;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                19px;
+
+            margin:
+                0
+                0
+                9px;
+
+        }
+
+
+        .small-site-feature p {
+
+            color:
+                rgba(255,255,255,0.51);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.7;
+
+            margin:
+                0;
+
+        }
+
+
+        /* =================================================
+           USE CASES
+           ================================================= */
+
+        .small-site-use-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap:
+                18px;
+
+        }
+
+
+        .small-site-use-card {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            min-height:
+                190px;
+
+            padding:
+                28px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.07);
+
+            border-radius:
+                18px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(13,28,62,0.72),
+                    rgba(5,11,26,0.82)
+                );
+
+            transition:
+                0.35s
+                ease;
+
+        }
+
+
+        .small-site-use-card::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                140px;
+
+            height:
+                140px;
+
+            right:
+                -70px;
+
+            bottom:
+                -75px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(0,212,255,0.07);
+
+            filter:
+                blur(22px);
+
+        }
+
+
+        .small-site-use-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            border-color:
+                rgba(0,212,255,0.28);
+
+        }
+
+
+        .small-site-use-number {
+
+            color:
+                rgba(0,212,255,0.68);
+
+            font-family:
+                "Orbitron",
+                sans-serif;
+
+            font-size:
+                12px;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                17px;
+
+        }
+
+
+        .small-site-use-card h3 {
+
+            color:
+                #ffffff;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                20px;
+
+            margin:
+                0
+                0
+                10px;
+
+        }
+
+
+        .small-site-use-card p {
+
+            color:
+                rgba(255,255,255,0.52);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.7;
+
+            margin:
+                0;
+
+            max-width:
+                500px;
+
+        }
+
+
+        /* =================================================
+           PRICING
+           ================================================= */
+
+        .small-site-pricing {
+
+            padding:
+                90px
+                20px;
+
+        }
+
+
+        .small-site-price-card {
+
+            max-width:
+                900px;
+
+            margin:
+                0 auto;
+
+            padding:
+                45px;
+
+            border:
+                1px solid
+                rgba(0,212,255,0.25);
+
+            border-radius:
+                25px;
+
+            background:
+
+                radial-gradient(
+                    circle at top right,
+                    rgba(0,212,255,0.09),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    rgba(11,28,62,0.90),
+                    rgba(4,10,25,0.96)
+                );
+
+            box-shadow:
+                0 25px 70px
+                rgba(0,0,0,0.25);
+
+        }
+
+
+        .small-site-price-header {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-start;
+
+            gap:
+                25px;
+
+            margin-bottom:
+                35px;
+
+        }
+
+
+        .small-site-price-label {
+
+            color:
+                rgba(255,255,255,0.5);
+
+            font-size:
+                13px;
+
+            letter-spacing:
+                1.5px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .small-site-price {
+
+            color:
+                #ffffff;
+
+            font-family:
+                "Orbitron",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    38px,
+                    6vw,
+                    60px
+                );
+
+            line-height:
+                1;
+
+            margin:
+                0;
+
+        }
+
+
+        .small-site-price span {
+
+            color:
+                var(--small-blue);
+
+        }
+
+
+        .small-site-price-unit {
+
+            color:
+                rgba(255,255,255,0.42);
+
+            font-size:
+                13px;
+
+            margin-top:
+                12px;
+
+        }
+
+
+        .small-site-price-badge {
+
+            padding:
+                9px
+                13px;
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(0,212,255,0.08);
+
+            border:
+                1px solid
+                rgba(0,212,255,0.2);
+
+            color:
+                var(--small-blue);
+
+            font-size:
+                11px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                1px;
+
+            text-transform:
+                uppercase;
+
+            white-space:
+                nowrap;
+
+        }
+
+
+        .small-site-price-list {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap:
+                14px;
+
+            padding-top:
+                28px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.07);
+
+        }
+
+
+        .small-site-price-item {
+
+            display:
+                flex;
+
+            align-items:
+                flex-start;
+
+            gap:
+                11px;
+
+            color:
+                rgba(255,255,255,0.67);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.55;
+
+        }
+
+
+        .small-site-price-item i {
+
+            color:
+                var(--small-blue);
+
+            margin-top:
+                3px;
+
+        }
+
+
+        .small-site-price-note {
+
+            color:
+                rgba(255,255,255,0.42);
+
+            font-size:
+                12px;
+
+            line-height:
+                1.7;
+
+            margin:
+                28px
+                0
+                0;
+
+        }
+
+
+        /* =================================================
+           PROCESS
+           ================================================= */
+
+        .small-site-process-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                16px;
+
+        }
+
+
+        .small-site-process-card {
+
+            padding:
+                25px
+                20px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.07);
+
+            border-radius:
+                17px;
+
+            background:
+                rgba(255,255,255,0.025);
+
+            transition:
+                0.3s
+                ease;
+
+        }
+
+
+        .small-site-process-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                rgba(0,212,255,0.3);
+
+            background:
+                rgba(0,212,255,0.035);
+
+        }
+
+
+        .small-site-process-number {
+
+            font-family:
+                "Orbitron",
+                sans-serif;
+
+            color:
+                var(--small-blue);
+
+            font-size:
+                13px;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .small-site-process-card h3 {
+
+            color:
+                #ffffff;
+
+            font-size:
+                17px;
+
+            margin:
+                0
+                0
+                9px;
+
+        }
+
+
+        .small-site-process-card p {
+
+            color:
+                rgba(255,255,255,0.48);
+
+            font-size:
+                13px;
+
+            line-height:
+                1.65;
+
+            margin:
+                0;
+
+        }
+
+
+        /* =================================================
+           FAQ
+           ================================================= */
+
+        .small-site-faq {
+
+            max-width:
+                850px;
+
+            margin:
+                0 auto;
+
+        }
+
+
+        .small-site-faq details {
+
+            margin-bottom:
+                12px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.07);
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(255,255,255,0.025);
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .small-site-faq summary {
+
+            cursor:
+                pointer;
+
+            list-style:
+                none;
+
+            padding:
+                20px
+                22px;
+
+            padding-right:
+                55px;
+
+            color:
+                #ffffff;
+
+            font-weight:
+                700;
+
+            font-size:
+                15px;
+
+            position:
+                relative;
+
+        }
+
+
+        .small-site-faq summary::-webkit-details-marker {
+
+            display:
+                none;
+
+        }
+
+
+        .small-site-faq summary::after {
+
+            content:
+                "+";
+
+            position:
+                absolute;
+
+            right:
+                22px;
+
+            top:
+                17px;
+
+            color:
+                var(--small-blue);
+
+            font-size:
+                23px;
+
+            font-weight:
+                400;
+
+            transition:
+                0.3s
+                ease;
+
+        }
+
+
+        .small-site-faq details[open]
+        summary::after {
+
+            transform:
+                rotate(45deg);
+
+        }
+
+
+        .small-site-faq details p {
+
+            color:
+                rgba(255,255,255,0.5);
+
+            padding:
+                0
+                22px
+                21px;
+
+            margin:
+                0;
+
+            font-size:
+                14px;
+
+            line-height:
+                1.75;
+
+        }
+
+
+        /* =================================================
+           FINAL CTA
+           ================================================= */
+
+        .small-site-final {
+
+            padding:
+                100px
+                20px
+                110px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .small-site-final-box {
+
+            max-width:
+                950px;
+
+            margin:
+                0 auto;
+
+            padding:
+                65px
+                30px;
+
+            border:
+                1px solid
+                rgba(0,212,255,0.2);
+
+            border-radius:
+                25px;
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    rgba(0,212,255,0.08),
+                    transparent 60%
+                ),
+
+                rgba(7,16,38,0.75);
+
+        }
+
+
+        .small-site-final h2 {
+
+            font-family:
+                "Orbitron",
+                sans-serif;
+
+            color:
+                #ffffff;
+
+            font-size:
+                clamp(
+                    28px,
+                    5vw,
+                    48px
+                );
+
+            margin:
+                0
+                0
+                17px;
+
+        }
+
+
+        .small-site-final h2 span {
+
+            color:
+                var(--small-blue);
+
+        }
+
+
+        .small-site-final p {
+
+            max-width:
+                650px;
+
+            margin:
+                0
+                auto
+                28px;
+
+            color:
+                rgba(255,255,255,0.55);
+
+            line-height:
+                1.75;
+
+        }
+
+
+        .small-site-custom-line {
+
+            margin-top:
+                28px;
+
+            color:
+                rgba(255,255,255,0.38);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
+
+        @media (max-width: 950px) {
+
+            .small-site-hero-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    50px;
+
+            }
+
+
+            .small-site-mockup {
+
+                transform:
+                    none;
+
+            }
+
+
+            .small-site-features {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .small-site-process-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .small-site-hero {
+
+                padding-top:
+                    110px;
+
+            }
+
+
+            .small-site-hero h1 {
+
+                letter-spacing:
+                    -1px;
+
+            }
+
+
+            .small-site-description {
+
+                font-size:
+                    15px;
+
+            }
+
+
+            .small-site-use-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .small-site-price-header {
+
+                flex-direction:
+                    column;
+
+                gap:
+                    20px;
+
+            }
+
+
+            .small-site-price-card {
+
+                padding:
+                    30px
+                    22px;
+
+            }
+
+
+            .small-site-price-list {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .small-site-process-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .small-site-section,
+            .small-site-pricing {
+
+                padding-top:
+                    65px;
+
+                padding-bottom:
+                    65px;
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .small-site-actions {
+
+                flex-direction:
+                    column;
+
+                width:
+                    100%;
+
+            }
+
+
+            .small-site-button {
+
+                width:
+                    100%;
+
+            }
+
+
+            .small-site-mockup {
+
+                border-radius:
+                    16px;
+
+            }
+
+
+            .mockup-body {
+
+                padding:
+                    13px;
+
+            }
+
+
+            .mockup-hero-card {
+
+                min-height:
+                    145px;
+
+                padding:
+                    18px;
+
+            }
+
+
+            .small-site-final-box {
+
+                padding:
+                    45px
+                    20px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="small-site-page">
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+
+            <a
+                href="index.html"
+                class="logo-link"
+                aria-label="CATALYST Home"
+            >
+
+                <img
+                    src="assets/logo.png"
+                    alt="CATALYST Logo"
+                    class="site-logo"
+                >
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#services">
+                    Services
+                </a>
+
+                <a href="index.html#work">
+                    Our Work
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+                <a
+                    href="index.html#contact"
+                    class="nav-cta"
+                >
+                    Get a Quote
+                </a>
+
+            </div>
+
+
+            <button
+                class="mobile-menu-button"
+                aria-label="Open menu"
+                type="button"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section class="small-site-hero">
+
+            <div class="small-site-container">
+
+
+                <a
+                    href="index.html"
+                    class="small-site-back"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to CATALYST
+
+                </a>
+
+
+                <div class="small-site-hero-grid">
+
+
+                    <!-- LEFT -->
+
+                    <div>
+
+
+                        <div class="small-site-label">
+
+                            <span class="small-site-label-dot"></span>
+
+                            MENU & SMALL WEBSITES
+
+                        </div>
+
+
+                        <h1>
+
+                            YOUR BUSINESS
+                            <span>DESERVES</span>
+                            A DIGITAL HOME.
+
+                        </h1>
+
+
+                        <p class="small-site-description">
+
+                            Simple, modern and mobile-friendly websites
+                            designed for restaurants, small businesses,
+                            personal brands and anyone who needs a clean
+                            online presence without unnecessary complexity.
+
+                        </p>
+
+
+                        <div class="small-site-actions">
+
+
+                            <a
+                                href="#"
+                                class="small-site-button small-site-button-primary contact-whatsapp"
+                                data-whatsapp-link
+                                data-whatsapp-message="Hello CATALYST! I am interested in a Menu Website / Small Website. I saw your AED 100–150 pricing and would like to discuss my requirements."
+                            >
+
+                                <i class="fa-brands fa-whatsapp"></i>
+
+                                Start a Website
+
+                            </a>
+
+
+                            <a
+                                href="#pricing"
+                                class="small-site-button small-site-button-secondary"
+                            >
+
+                                <i class="fa-solid fa-tag"></i>
+
+                                View Pricing
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- RIGHT -->
+
+                    <div class="small-site-mockup-wrapper">
+
+
+                        <div class="small-site-mockup">
+
+
+                            <div class="mockup-browser">
+
+                                <span class="mockup-browser-dot"></span>
+
+                                <span class="mockup-browser-dot"></span>
+
+                                <span class="mockup-browser-dot"></span>
+
+
+                                <div class="mockup-browser-url">
+
+                                    yourbusiness.com
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mockup-body">
+
+
+                                <div class="mockup-nav">
+
+
+                                    <div class="mockup-logo"></div>
+
+
+                                    <div class="mockup-nav-lines">
+
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="mockup-hero-card">
+
+
+                                    <div class="mockup-small-text"></div>
+
+
+                                    <div class="mockup-large-text"></div>
+
+                                    <div class="mockup-large-text short"></div>
+
+
+                                    <div class="mockup-description"></div>
+
+
+                                    <div class="mockup-button"></div>
+
+
+                                </div>
+
+
+                                <div class="mockup-menu-title">
+
+                                    Featured Menu
+
+                                </div>
+
+
+                                <div class="mockup-menu-grid">
+
+                                    <div class="mockup-menu-item"></div>
+
+                                    <div class="mockup-menu-item"></div>
+
+                                    <div class="mockup-menu-item"></div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FEATURES
+             ================================================= -->
+
+        <section class="small-site-section">
+
+
+            <div class="small-site-section-container">
+
+
+                <div class="small-site-heading">
+
+
+                    <div class="small-site-heading-label">
+
+                        What You Get
+
+                    </div>
+
+
+                    <h2>
+
+                        Small website.
+                        Big first impression.
+
+                    </h2>
+
+
+                    <p>
+
+                        We focus on the important things: clear
+                        information, attractive presentation,
+                        mobile responsiveness and an easy way for
+                        customers to contact your business.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="small-site-features">
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-mobile-screen"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Mobile Friendly
+
+                        </h3>
+
+
+                        <p>
+
+                            Your website is designed to work smoothly
+                            across phones, tablets and desktop screens.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Simple & Fast
+
+                        </h3>
+
+
+                        <p>
+
+                            Keep your digital presence focused with
+                            a lightweight website built around your
+                            most important information.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-qrcode"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Digital Menu Ready
+
+                        </h3>
+
+
+                        <p>
+
+                            Give customers an easy way to view your
+                            menu or business information directly from
+                            their phone.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-palette"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Custom Design
+
+                        </h3>
+
+
+                        <p>
+
+                            Your colors, logo, content and style can
+                            be incorporated into the website design.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Easy Contact
+
+                        </h3>
+
+
+                        <p>
+
+                            Add WhatsApp, phone, email or other contact
+                            options so customers can reach you easily.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-feature">
+
+
+                        <div class="small-site-feature-icon">
+
+                            <i class="fa-solid fa-globe"></i>
+
+                        </div>
+
+
+                        <h3>
+
+                            Online Presence
+
+                        </h3>
+
+
+                        <p>
+
+                            Give your business a professional place
+                            online where customers can learn more
+                            about what you offer.
+
+                        </p>
+
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             USE CASES
+             ================================================= -->
+
+        <section class="small-site-section">
+
+
+            <div class="small-site-section-container">
+
+
+                <div class="small-site-heading">
+
+
+                    <div class="small-site-heading-label">
+
+                        Perfect For
+
+                    </div>
+
+
+                    <h2>
+
+                        Built for businesses that need
+                        something simple.
+
+                    </h2>
+
+
+                    <p>
+
+                        You don't always need a huge website.
+                        Sometimes a clean, focused page is exactly
+                        what your customers need.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="small-site-use-grid">
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            01 / RESTAURANTS
+
+                        </div>
+
+
+                        <h3>
+
+                            Digital Restaurant Menus
+
+                        </h3>
+
+
+                        <p>
+
+                            Let customers quickly access your menu,
+                            discover your dishes and contact your
+                            restaurant from their phone.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            02 / CAFÉS
+
+                        </div>
+
+
+                        <h3>
+
+                            Café & Coffee Menus
+
+                        </h3>
+
+
+                        <p>
+
+                            Create a stylish online menu for your
+                            café, coffee shop or small food business.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            03 / SMALL BUSINESS
+
+                        </div>
+
+
+                        <h3>
+
+                            Business Landing Pages
+
+                        </h3>
+
+
+                        <p>
+
+                            Present your services, business details,
+                            contact information and key offerings
+                            in one focused website.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            04 / PERSONAL BRAND
+
+                        </div>
+
+
+                        <h3>
+
+                            Personal & Creator Pages
+
+                        </h3>
+
+
+                        <p>
+
+                            Showcase your work, profile, services,
+                            links or portfolio through a professional
+                            online presence.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            05 / SERVICES
+
+                        </div>
+
+
+                        <h3>
+
+                            Service Businesses
+
+                        </h3>
+
+
+                        <p>
+
+                            Make it easy for customers to understand
+                            your services and contact your business.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-use-card">
+
+
+                        <div class="small-site-use-number">
+
+                            06 / EVENTS
+
+                        </div>
+
+
+                        <h3>
+
+                            Event & Campaign Pages
+
+                        </h3>
+
+
+                        <p>
+
+                            Build a focused page for an event,
+                            promotion, campaign or special occasion.
+
+                        </p>
+
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRICING
+             ================================================= -->
+
+        <section
+            class="small-site-pricing"
+            id="pricing"
+        >
+
+
+            <div class="small-site-section-container">
+
+
+                <div class="small-site-heading">
+
+
+                    <div class="small-site-heading-label">
+
+                        Simple Pricing
+
+                    </div>
+
+
+                    <h2>
+
+                        Get online without
+                        overcomplicating it.
+
+                    </h2>
+
+
+                    <p>
+
+                        Our small website packages are designed to
+                        provide an affordable starting point for
+                        businesses that need a professional digital
+                        presence.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="small-site-price-card">
+
+
+                    <div class="small-site-price-header">
+
+
+                        <div>
+
+
+                            <div class="small-site-price-label">
+
+                                Menu / Small Website
+
+                            </div>
+
+
+                            <h3 class="small-site-price">
+
+                                AED
+                                <span>100–150</span>
+
+                            </h3>
+
+
+                            <div class="small-site-price-unit">
+
+                                per website
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="small-site-price-badge">
+
+                            Affordable
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="small-site-price-list">
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Mobile-friendly design
+                            </span>
+
+                        </div>
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Clean modern layout
+                            </span>
+
+                        </div>
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Business information sections
+                            </span>
+
+                        </div>
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Menu or product information
+                            </span>
+
+                        </div>
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                WhatsApp / contact integration
+                            </span>
+
+                        </div>
+
+
+                        <div class="small-site-price-item">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Customized visual styling
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p class="small-site-price-note">
+
+                        Final pricing may vary depending on the number
+                        of sections, content, functionality, design
+                        requirements and other project-specific needs.
+
+                    </p>
+
+
+                    <div style="margin-top: 28px;">
+
+
+                        <a
+                            href="#"
+                            class="small-site-button small-site-button-primary contact-whatsapp"
+                            data-whatsapp-link
+                            data-whatsapp-message="Hello CATALYST! I am interested in a Menu Website / Small Website. I saw your AED 100–150 pricing and would like to discuss my requirements."
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Discuss My Website
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROCESS
+             ================================================= -->
+
+        <section class="small-site-section">
+
+
+            <div class="small-site-section-container">
+
+
+                <div class="small-site-heading">
+
+
+                    <div class="small-site-heading-label">
+
+                        Our Process
+
+                    </div>
+
+
+                    <h2>
+
+                        From idea to online presence.
+
+                    </h2>
+
+
+                    <p>
+
+                        We keep the process straightforward so you
+                        can focus on your business while we handle
+                        the website.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="small-site-process-grid">
+
+
+                    <article class="small-site-process-card">
+
+
+                        <div class="small-site-process-number">
+
+                            01
+
+                        </div>
+
+
+                        <h3>
+
+                            Tell Us What You Need
+
+                        </h3>
+
+
+                        <p>
+
+                            Share your business information,
+                            requirements, content and preferred style.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-process-card">
+
+
+                        <div class="small-site-process-number">
+
+                            02
+
+                        </div>
+
+
+                        <h3>
+
+                            Plan the Design
+
+                        </h3>
+
+
+                        <p>
+
+                            We organize the content and determine
+                            the best structure for your website.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-process-card">
+
+
+                        <div class="small-site-process-number">
+
+                            03
+
+                        </div>
+
+
+                        <h3>
+
+                            Build the Website
+
+                        </h3>
+
+
+                        <p>
+
+                            Your website is created with a responsive
+                            layout and your chosen visual direction.
+
+                        </p>
+
+
+                    </article>
+
+
+                    <article class="small-site-process-card">
+
+
+                        <div class="small-site-process-number">
+
+                            04
+
+                        </div>
+
+
+                        <h3>
+
+                            Finalize & Launch
+
+                        </h3>
+
+
+                        <p>
+
+                            Once the project is ready, we prepare the
+                            final website for your intended use.
+
+                        </p>
+
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FAQ
+             ================================================= -->
+
+        <section class="small-site-section">
+
+
+            <div class="small-site-section-container">
+
+
+                <div class="small-site-heading">
+
+
+                    <div class="small-site-heading-label">
+
+                        FAQ
+
+                    </div>
+
+
+                    <h2>
+
+                        A few things you may want to know.
+
+                    </h2>
+
+
+                </div>
+
+
+                <div class="small-site-faq">
+
+
+                    <details>
+
+
+                        <summary>
+
+                            What is included in the AED 100–150 price?
+
+                        </summary>
+
+
+                        <p>
+
+                            The package is intended for a simple menu
+                            website or small business website. The exact
+                            scope depends on the number of sections,
+                            content and functionality required.
+
+                        </p>
+
+
+                    </details>
+
+
+                    <details>
+
+
+                        <summary>
+
+                            Can I use it as a restaurant menu?
+
+                        </summary>
+
+
+                        <p>
+
+                            Yes. A small website can be structured as
+                            a digital restaurant, café or food menu
+                            that customers can access from their phones.
+
+                        </p>
+
+
+                    </details>
+
+
+                    <details>
+
+
+                        <summary>
+
+                            Will the website work on mobile phones?
+
+                        </summary>
+
+
+                        <p>
+
+                            Yes. Mobile responsiveness is an important
+                            part of the design so customers can access
+                            your information comfortably on smaller
+                            screens.
+
+                        </p>
+
+
+                    </details>
+
+
+                    <details>
+
+
+                        <summary>
+
+                            Can I add WhatsApp?
+
+                        </summary>
+
+
+                        <p>
+
+                            Yes. WhatsApp and other contact methods can
+                            be incorporated depending on the requirements
+                            of the website.
+
+                        </p>
+
+
+                    </details>
+
+
+                    <details>
+
+
+                        <summary>
+
+                            Can I request a more advanced website?
+
+                        </summary>
+
+
+                        <p>
+
+                            Yes. If your project requires additional
+                            pages, advanced functionality, custom
+                            integrations or more complex features,
+                            CATALYST can provide a customized quote.
+
+                        </p>
+
+
+                    </details>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL CTA
+             ================================================= -->
+
+        <section class="small-site-final">
+
+
+            <div class="small-site-final-box">
+
+
+                <h2>
+
+                    Put your business
+                    <span>online.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Whether you need a digital menu, a simple business
+                    page or a focused online presence, CATALYST can
+                    build something clean, modern and easy to use.
+
+                </p>
+
+
+                <a
+                    href="#"
+                    class="small-site-button small-site-button-primary contact-whatsapp"
+                    data-whatsapp-link
+                    data-whatsapp-message="Hello CATALYST! I am interested in a Menu Website / Small Website. I saw your AED 100–150 pricing and would like to discuss my requirements."
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Start My Website
+
+                </a>
+
+
+                <div class="small-site-custom-line">
+
+                    Every project is fully customized by our expert team.
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+
+                <a href="index.html">
+
+                    <img
+                        src="assets/logo.png"
+                        alt="CATALYST Logo"
+                        class="footer-logo"
+                    >
+
+                </a>
+
+
+                <p>
+
+                    Ignite digital growth.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="footer-links">
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="index.html#services">
+                    Services
+                </a>
+
+
+                <a href="index.html#work">
+                    Our Work
+                </a>
+
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+            <div class="footer-contact">
+
+
+                <div>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    [YOUR PHONE / WHATSAPP]
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    [YOUR EMAIL]
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    [YOUR LOCATION]
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                ©
+                <span id="current-year">
+                    2026
+                </span>
+
+                CATALYST.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+
+                Ignite digital growth.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+         ===================================================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="js/script.js"
+        defer
+    ></script>
+
+
+    <!-- =====================================================
+         CURRENT YEAR
+         ===================================================== -->
+
+    <script>
+
+        const currentYearElement =
+            document.getElementById("current-year");
+
+        if (currentYearElement) {
+
+            currentYearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+    </script>
+
+
+</body>
+</html>

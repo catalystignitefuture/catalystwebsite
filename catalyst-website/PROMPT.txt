@@ -1,0 +1,127 @@
+You are a senior front-end developer and UI/UX designer. Act as my step-by-step guide to build a complete, production-ready website for a tech company. Give me full working code, and explain every setup step as if I'm a beginner.
+
+=====================================
+COMPANY DETAILS
+=====================================
+Company name: CATALYST
+Industry: Tech services company (UAE)
+Currency: AED
+Tagline: Write a short, catchy tech tagline for me (e.g., about igniting digital growth).
+Contact: [YOUR PHONE / WHATSAPP], [YOUR EMAIL], [YOUR LOCATION]
+
+=====================================
+ASSETS I WILL PROVIDE
+=====================================
+1. Company logo (I will upload it). Use it in the navbar, footer, and as the favicon. Show me exactly where to put the file (e.g., /assets/logo.png) and how it's referenced in the code.
+2. Four demo images (I will upload them). Use them in the "Our Work / Demos" section on the homepage, as an interactive gallery with hover effects. Name them demo1.jpg, demo2.jpg, demo3.jpg, demo4.jpg and tell me which folder to place them in.
+
+=====================================
+DESIGN & THEME
+=====================================
+- Dark theme: deep navy / near-black background (#050B1A to #0A1230 gradients)
+- Accent colors: neon blue (#00D4FF), electric blue (#2F6BFF), and white for text
+- Glowing neon borders, soft glow shadows, glassmorphism cards (blur + translucent backgrounds)
+- Futuristic tech feel, modern typography (Google Fonts such as Orbitron or Space Grotesk for headings, Inter or Poppins for body)
+- Fully responsive (mobile, tablet, desktop), mobile-first
+- Smooth, user-friendly, uncluttered interface with strong contrast and readable text
+
+=====================================
+ANIMATIONS & INTERACTIVITY
+=====================================
+- Animated hero background (floating particles, glowing gradient orbs, or a subtle grid animation)
+- Typing or glowing text effect on the hero headline
+- Scroll-reveal animations (fade-in / slide-up) as sections enter the screen
+- Neon glow hover effects, 3D tilt or lift on cards, ripple or pulse effect on buttons
+- Animated custom cursor glow (optional, desktop only)
+- Smooth page transitions between the homepage and the category pages
+- Sticky navbar with blur effect that highlights the active section
+- Animated counters (e.g., "100+ Projects Delivered," "50+ Happy Clients") in a stats strip
+- Back-to-top button and a scroll progress bar
+
+=====================================
+HOMEPAGE STRUCTURE (in this order)
+=====================================
+1. NAVBAR: Logo + links (Home, Services, Our Work, Contact) + a glowing "Get a Quote" button. Mobile hamburger menu with animation.
+
+2. HERO SECTION (what visitors see when the site opens):
+   - Big headline, short subtext, and the CATALYST branding
+   - Immediately show 5 large, interactive category buttons/cards with icons, neon glow, and hover animations:
+     1) NFC Cards
+     2) Website Creation
+     3) Graphic Designing
+     4) Video Editing
+     5) Menu Websites / Small Websites
+   - Each button links to its own dedicated page (see below)
+
+3. OUR WORK / DEMOS SECTION (appears as the user scrolls down):
+   - Interactive showcase using my 4 provided images
+   - Hover zoom, glowing overlay with title, click-to-open lightbox/modal preview
+   - Optional: a smooth carousel or masonry grid
+   - Add a short heading like "See What We Create"
+
+4. WHY CHOOSE CATALYST: 3 to 4 animated feature cards (fast delivery, affordable pricing, custom-made, professional team)
+
+5. CONTACT / CTA SECTION: A glowing call-to-action, WhatsApp button, and a simple contact form (name, email, service dropdown, message)
+
+6. FOOTER: Logo, quick links, social media icons, copyright "© CATALYST"
+
+=====================================
+CATEGORY PAGES (5 separate pages)
+=====================================
+When a user clicks any of the 5 categories, they go to its own page with the same dark neon theme, a back-to-home button, a hero banner, a quick-info section, a pricing card, and a CTA button ("Order Now" / "Contact Us" linking to WhatsApp). Each page needs interactive, engaging content (icons, animated feature lists, hover cards). Write persuasive, professional copy for each. Each page MUST end with the line: "Every project is fully customized by our expert team."
+
+PAGE 1: NFC CARDS
+- Price: 12 AED per card
+- Content ideas: tap-to-share contact info, share social links/website/menu/portfolio instantly, no app required, premium durable cards, eco-friendly (replaces paper business cards), works with iPhone and Android, a small animated "tap" demo graphic
+
+PAGE 2: WEBSITE CREATION
+- Price: 900 AED
+- Content ideas: modern responsive design, SEO-friendly, fast loading, mobile-optimized, contact forms and WhatsApp integration, secure and scalable, a small animated browser-mockup graphic
+
+PAGE 3: GRAPHIC DESIGNING
+- Price: 10 AED per design
+- Content ideas: logos, social media posts, banners, flyers, brand identity, quick turnaround, unlimited creativity, an animated before/after style showcase
+
+PAGE 4: VIDEO EDITING
+- Price: 45 to 60 AED per video
+- Content ideas: reels, YouTube videos, ads, transitions, color grading, subtitles, sound design, fast delivery, an animated "timeline" graphic
+
+PAGE 5: MENU WEBSITES / SMALL WEBSITES
+- Price: 100 to 150 AED
+- Content ideas: digital QR menus for restaurants and cafes, one-page business websites, easy to update, affordable, quick delivery, mobile-friendly
+
+=====================================
+TECHNICAL REQUIREMENTS
+=====================================
+- Use plain HTML, CSS, and vanilla JavaScript (no frameworks) so a beginner can run it easily. You may use free CDN libraries only if helpful (AOS or GSAP for animations, Font Awesome or Lucide for icons).
+- Use a clean file structure, for example:
+  /catalyst-website
+    index.html
+    nfc-cards.html
+    website-creation.html
+    graphic-designing.html
+    video-editing.html
+    small-websites.html
+    /css/style.css
+    /js/script.js
+    /assets/logo.png
+    /assets/demo1.jpg ... demo4.jpg
+- Use shared CSS and JS across all pages for consistency
+- Add semantic HTML, alt text for images, meta tags for SEO, and fast-loading best practices
+- Comment the code clearly so I can edit text, colors, and prices later
+- Use CSS variables for the color theme so I can change colors easily
+
+=====================================
+HOW I WANT YOU TO GUIDE ME
+=====================================
+Work in small steps and wait for me to say "next" before moving on:
+STEP 1: Explain what software I need (i will be using notepads and at last i will give them .js .css and all guide me there ) and how to create the folders/files
+STEP 2: Give me the full CSS file (style.css)
+STEP 3: Give me the full JavaScript file (script.js)
+STEP 4: Give me index.html (homepage)
+STEP 5: Give me each of the 5 category pages, one at a time
+STEP 6: Show me how to test everything locally and fix common problems
+
+Always give complete copy-paste-ready code, never partial snippets or "add the rest here" placeholders. After each step, tell me exactly what to do and what I should see on screen. If I upload images, confirm how they're being used in the code.
+
+Start with STEP 1 now.

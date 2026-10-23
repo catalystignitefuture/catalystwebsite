@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="CATALYST Video Editing Services in UAE. Professional video editing starting from AED 45–60 per video."
+    >
+
+    <meta
+        name="keywords"
+        content="video editing UAE, video editor UAE, CATALYST, social media video editing, reels editing, promotional videos"
+    >
+
+    <meta name="author" content="CATALYST">
+
+    <meta property="og:title" content="Video Editing | CATALYST">
+    <meta
+        property="og:description"
+        content="Professional video editing by CATALYST. AED 45–60 per video."
+    >
+    <meta property="og:type" content="website">
+
+    <title>Video Editing | CATALYST</title>
+
+    <!-- Favicon / Logo -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- =========================================================
+         VIDEO EDITING PAGE STYLES
+         ========================================================= -->
+    <style>
+
+        /* =====================================================
+           PAGE VARIABLES
+           ===================================================== */
+
+        .video-page {
+            --video-blue: #00d4ff;
+            --video-electric: #2f6bff;
+            --video-dark: #050b1a;
+            --video-card: rgba(9, 20, 48, 0.72);
+            --video-border: rgba(0, 212, 255, 0.18);
+        }
+
+
+        /* =====================================================
+           PAGE HERO
+           ===================================================== */
+
+        .video-hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 130px 20px 80px;
+        }
+
+        .video-hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(0, 212, 255, 0.08);
+            filter: blur(100px);
+            border-radius: 50%;
+            top: 5%;
+            left: -150px;
+            pointer-events: none;
+        }
+
+        .video-hero::after {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: rgba(47, 107, 255, 0.10);
+            filter: blur(100px);
+            border-radius: 50%;
+            right: -150px;
+            bottom: -100px;
+            pointer-events: none;
+        }
+
+        .video-hero-container {
+            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .video-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: rgba(255, 255, 255, 0.68);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 35px;
+            transition: 0.3s ease;
+        }
+
+        .video-back-link:hover {
+            color: var(--video-blue);
+            transform: translateX(-5px);
+        }
+
+        .video-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .video-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 8px 14px;
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            border-radius: 999px;
+            background: rgba(0, 212, 255, 0.05);
+            color: var(--video-blue);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .video-eyebrow-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--video-blue);
+            box-shadow: 0 0 12px var(--video-blue);
+            animation: videoDotPulse 1.5s infinite;
+        }
+
+        @keyframes videoDotPulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.45;
+                transform: scale(0.7);
+            }
+        }
+
+        .video-hero h1 {
+            font-family: "Orbitron", sans-serif;
+            font-size: clamp(42px, 6vw, 76px);
+            line-height: 1.02;
+            letter-spacing: -2px;
+            margin: 0 0 25px;
+            color: #ffffff;
+        }
+
+        .video-hero h1 span {
+            color: var(--video-blue);
+            text-shadow:
+                0 0 15px rgba(0, 212, 255, 0.4),
+                0 0 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .video-hero-description {
+            max-width: 620px;
+            color: rgba(255, 255, 255, 0.68);
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .video-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .video-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 23px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+        .video-button:hover {
+            transform: translateY(-4px);
+        }
+
+        .video-button-primary {
+            background: linear-gradient(
+                135deg,
+                var(--video-blue),
+                var(--video-electric)
+            );
+            color: #ffffff;
+            box-shadow: 0 10px 35px rgba(0, 212, 255, 0.18);
+        }
+
+        .video-button-primary:hover {
+            box-shadow:
+                0 15px 40px rgba(0, 212, 255, 0.3),
+                0 0 20px rgba(0, 212, 255, 0.15);
+        }
+
+        .video-button-secondary {
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .video-button-secondary:hover {
+            border-color: var(--video-blue);
+            color: var(--video-blue);
+        }
+
+
+        /* =====================================================
+           VIDEO EDITOR MOCKUP
+           ===================================================== */
+
+        .video-editor-wrapper {
+            position: relative;
+            perspective: 1200px;
+        }
+
+        .video-editor {
+            width: 100%;
+            min-height: 430px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 22px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(13, 28, 63, 0.95),
+                    rgba(4, 10, 25, 0.97)
+                );
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.35),
+                0 0 50px rgba(0, 212, 255, 0.06);
+            overflow: hidden;
+            transform: rotateY(-5deg) rotateX(2deg);
+            transition: transform 0.5s ease;
+        }
+
+        .video-editor-wrapper:hover .video-editor {
+            transform: rotateY(0deg) rotateX(0deg) translateY(-8px);
+        }
+
+        .editor-topbar {
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .editor-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .editor-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .editor-title {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .editor-content {
+            padding: 18px;
+        }
+
+        .editor-preview {
+            height: 190px;
+            border-radius: 13px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 212, 255, 0.14);
+            background:
+                radial-gradient(
+                    circle at 70% 35%,
+                    rgba(0, 212, 255, 0.38),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 30% 70%,
+                    rgba(47, 107, 255, 0.32),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #07132d,
+                    #101d46
+                );
+        }
+
+        .editor-preview::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    120deg,
+                    transparent 25%,
+                    rgba(255, 255, 255, 0.05) 25%,
+                    rgba(255, 255, 255, 0.05) 26%,
+                    transparent 26%
+                );
+            background-size: 80px 80px;
+            opacity: 0.5;
+        }
+
+        .preview-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 212, 255, 0.5);
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--video-blue);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.18);
+            animation: playGlow 2.2s infinite;
+        }
+
+        @keyframes playGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(0, 212, 255, 0.14);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(0, 212, 255, 0.32);
+            }
+        }
+
+        .preview-label {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 9px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .editor-controls {
+            display: flex;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .editor-control {
+            height: 7px;
+            flex: 1;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .editor-control.active {
+            background: rgba(0, 212, 255, 0.45);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.15);
+        }
+
+        .editor-timeline {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.28);
+            font-size: 8px;
+            margin-bottom: 8px;
+        }
+
+        .timeline-track {
+            height: 42px;
+            display: flex;
+            gap: 4px;
+        }
+
+        .timeline-block {
+            height: 100%;
+            border-radius: 5px;
+            background: rgba(47, 107, 255, 0.3);
+            border: 1px solid rgba(47, 107, 255, 0.35);
+        }
+
+        .timeline-block:nth-child(1) {
+            width: 24%;
+        }
+
+        .timeline-block:nth-child(2) {
+            width: 31%;
+            background: rgba(0, 212, 255, 0.24);
+            border-color: rgba(0, 212, 255, 0.35);
+        }
+
+        .timeline-block:nth-child(3) {
+            width: 18%;
+        }
+
+        .timeline-block:nth-child(4) {
+            width: 27%;
+            background: rgba(0, 212, 255, 0.16);
+        }
+
+
+        /* =====================================================
+           QUICK INFO
+           ===================================================== */
+
+        .video-section {
+            padding: 90px 20px;
+            position: relative;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .video-section-heading {
+            max-width: 700px;
+            margin-bottom: 45px;
+        }
+
+        .video-section-heading .mini-label {
+            color: var(--video-blue);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .video-section-heading h2 {
+            font-family: "Space Grotesk", sans-serif;
+            color: #ffffff;
+            font-size: clamp(30px, 4vw, 48px);
+            line-height: 1.1;
+            margin: 0 0 15px;
+        }
+
+        .video-section-heading p {
+            color: rgba(255, 255, 255, 0.58);
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .video-info-card {
+            padding: 27px;
+            border: 1px solid var(--video-border);
+            border-radius: 18px;
+            background: var(--video-card);
+            backdrop-filter: blur(15px);
+            transition: 0.35s ease;
+        }
+
+        .video-info-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 212, 255, 0.45);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.07);
+        }
+
+        .video-info-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 13px;
+            background: rgba(0, 212, 255, 0.08);
+            border: 1px solid rgba(0, 212, 255, 0.18);
+            color: var(--video-blue);
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        .video-info-card h3 {
+            margin: 0 0 10px;
+            color: #ffffff;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 19px;
+        }
+
+        .video-info-card p {
+            color: rgba(255, 255, 255, 0.52);
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           VIDEO TYPES
+           ===================================================== */
+
+        .video-types-section {
+            padding: 90px 20px;
+        }
+
+        .video-types-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .video-type-card {
+            min-height: 180px;
+            padding: 27px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(13, 28, 62, 0.72),
+                    rgba(5, 11, 26, 0.82)
+                );
+            transition: 0.35s ease;
+        }
+
+        .video-type-card::after {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            right: -60px;
+            bottom: -70px;
+            background: rgba(0, 212, 255, 0.07);
+            filter: blur(20px);
+        }
+
+        .video-type-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 212, 255, 0.28);
+        }
+
+        .video-type-number {
+            color: rgba(0, 212, 255, 0.65);
+            font-family: "Orbitron", sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 17px;
+        }
+
+        .video-type-card h3 {
+            margin: 0 0 10px;
+            color: #ffffff;
+            font-size: 20px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .video-type-card p {
+            color: rgba(255, 255, 255, 0.53);
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0;
+            max-width: 450px;
+        }
+
+
+        /* =====================================================
+           PRICING
+           ===================================================== */
+
+        .video-pricing-section {
+            padding: 90px 20px;
+        }
+
+        .video-pricing-card {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 45px;
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(0, 212, 255, 0.09),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    145deg,
+                    rgba(11, 28, 62, 0.9),
+                    rgba(4, 10, 25, 0.96)
+                );
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.25),
+                0 0 50px rgba(0, 212, 255, 0.04);
+        }
+
+        .video-price-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .video-price-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .video-price {
+            font-family: "Orbitron", sans-serif;
+            color: #ffffff;
+            font-size: clamp(40px, 6vw, 62px);
+            line-height: 1;
+            margin: 0;
+        }
+
+        .video-price span {
+            color: var(--video-blue);
+        }
+
+        .video-price-unit {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        .video-price-badge {
+            padding: 9px 13px;
+            border-radius: 999px;
+            background: rgba(0, 212, 255, 0.08);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            color: var(--video-blue);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .video-price-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .video-price-feature {
+            display: flex;
+            gap: 11px;
+            align-items: flex-start;
+            color: rgba(255, 255, 255, 0.68);
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .video-price-feature i {
+            color: var(--video-blue);
+            margin-top: 3px;
+        }
+
+        .video-price-note {
+            margin: 28px 0 0;
+            color: rgba(255, 255, 255, 0.42);
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           PROCESS
+           ===================================================== */
+
+        .video-process-section {
+            padding: 90px 20px;
+        }
+
+        .video-process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .video-process-card {
+            padding: 25px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 17px;
+            background: rgba(255, 255, 255, 0.025);
+            transition: 0.3s ease;
+        }
+
+        .video-process-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(0, 212, 255, 0.3);
+            background: rgba(0, 212, 255, 0.035);
+        }
+
+        .video-process-number {
+            font-family: "Orbitron", sans-serif;
+            color: var(--video-blue);
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .video-process-card h3 {
+            color: #ffffff;
+            font-size: 17px;
+            margin: 0 0 9px;
+        }
+
+        .video-process-card p {
+            color: rgba(255, 255, 255, 0.48);
+            font-size: 13px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           FAQ
+           ===================================================== */
+
+        .video-faq-section {
+            padding: 90px 20px;
+        }
+
+        .video-faq {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .video-faq details {
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.025);
+            overflow: hidden;
+        }
+
+        .video-faq summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 20px 22px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 15px;
+            position: relative;
+            padding-right: 55px;
+        }
+
+        .video-faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .video-faq summary::after {
+            content: "+";
+            position: absolute;
+            right: 22px;
+            top: 17px;
+            color: var(--video-blue);
+            font-size: 23px;
+            font-weight: 400;
+            transition: 0.3s ease;
+        }
+
+        .video-faq details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .video-faq details p {
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0 22px 21px;
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+
+        /* =====================================================
+           FINAL CTA
+           ===================================================== */
+
+        .video-final-cta {
+            padding: 100px 20px 110px;
+            text-align: center;
+        }
+
+        .video-final-cta-box {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 65px 30px;
+            border-radius: 25px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(0, 212, 255, 0.08),
+                    transparent 60%
+                ),
+                rgba(7, 16, 38, 0.75);
+        }
+
+        .video-final-cta h2 {
+            font-family: "Orbitron", sans-serif;
+            color: #ffffff;
+            font-size: clamp(28px, 5vw, 48px);
+            margin: 0 0 17px;
+        }
+
+        .video-final-cta h2 span {
+            color: var(--video-blue);
+        }
+
+        .video-final-cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.75;
+        }
+
+        .video-custom-line {
+            margin-top: 28px;
+            color: rgba(255, 255, 255, 0.38);
+            font-size: 13px;
+            letter-spacing: 0.3px;
+        }
+
+
+        /* =====================================================
+           MOBILE RESPONSIVE
+           ===================================================== */
+
+        @media (max-width: 950px) {
+
+            .video-hero-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .video-editor {
+                transform: none;
+            }
+
+            .video-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .video-hero {
+                padding-top: 110px;
+            }
+
+            .video-hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .video-hero-description {
+                font-size: 15px;
+            }
+
+            .video-editor {
+                min-height: 350px;
+            }
+
+            .editor-preview {
+                height: 145px;
+            }
+
+            .video-types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-price-top {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .video-price-features {
+                grid-template-columns: 1fr;
+            }
+
+            .video-pricing-card {
+                padding: 30px 22px;
+            }
+
+            .video-process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-section,
+            .video-types-section,
+            .video-pricing-section,
+            .video-process-section,
+            .video-faq-section {
+                padding-top: 65px;
+                padding-bottom: 65px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .video-hero-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .video-button {
+                width: 100%;
+            }
+
+            .video-editor {
+                border-radius: 16px;
+            }
+
+            .editor-content {
+                padding: 12px;
+            }
+
+            .editor-preview {
+                height: 125px;
+            }
+
+            .video-final-cta-box {
+                padding: 45px 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body class="video-page">
+
+    <!-- =========================================================
+         NAVIGATION
+         ========================================================= -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo-link" aria-label="CATALYST Home">
+
+                <img
+                    src="assets/logo.png"
+                    alt="CATALYST Logo"
+                    class="site-logo"
+                >
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#services">Services</a>
+
+                <a href="index.html#work">Our Work</a>
+
+                <a href="index.html#contact">Contact</a>
+
+                <a href="index.html#contact" class="nav-cta">
+                    Get a Quote
+                </a>
+
+            </div>
+
+
+            <button
+                class="mobile-menu-button"
+                aria-label="Open menu"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <main>
+
+        <section class="video-hero">
+
+            <div class="video-hero-container">
+
+                <a
+                    href="index.html"
+                    class="video-back-link"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to CATALYST
+                </a>
+
+
+                <div class="video-hero-grid">
+
+                    <!-- LEFT SIDE -->
+
+                    <div class="video-hero-content">
+
+                        <div class="video-eyebrow">
+                            <span class="video-eyebrow-dot"></span>
+                            CATALYST VIDEO EDITING
+                        </div>
+
+
+                        <h1>
+                            TURN RAW
+                            <span>FOOTAGE</span>
+                            INTO IMPACT.
+                        </h1>
+
+
+                        <p class="video-hero-description">
+                            Professional video editing designed to make your
+                            content sharper, more engaging and ready for
+                            social media, marketing, promotions and business
+                            communication.
+                        </p>
+
+
+                        <div class="video-hero-actions">
+
+                            <a
+                                href="#"
+                                class="video-button video-button-primary contact-whatsapp"
+                                data-whatsapp-link
+                                data-whatsapp-message="Hello CATALYST! I am interested in Video Editing. I saw your AED 45–60/video pricing and would like to discuss my requirements."
+                            >
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Start a Project
+                            </a>
+
+
+                            <a
+                                href="#pricing"
+                                class="video-button video-button-secondary"
+                            >
+                                <i class="fa-solid fa-tag"></i>
+                                View Pricing
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="video-editor-wrapper">
+
+                        <div class="video-editor">
+
+                            <div class="editor-topbar">
+
+                                <div class="editor-dots">
+                                    <span class="editor-dot"></span>
+                                    <span class="editor-dot"></span>
+                                    <span class="editor-dot"></span>
+                                </div>
+
+                                <div class="editor-title">
+                                    CATALYST / VIDEO TIMELINE
+                                </div>
+
+                            </div>
+
+
+                            <div class="editor-content">
+
+                                <div class="editor-preview">
+
+                                    <div class="preview-play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+
+                                    <div class="preview-label">
+                                        YOUR STORY / YOUR BRAND
+                                    </div>
+
+                                </div>
+
+
+                                <div class="editor-controls">
+
+                                    <div class="editor-control active"></div>
+                                    <div class="editor-control"></div>
+                                    <div class="editor-control"></div>
+                                    <div class="editor-control"></div>
+                                    <div class="editor-control active"></div>
+
+                                </div>
+
+
+                                <div class="editor-timeline">
+
+                                    <div class="timeline-labels">
+                                        <span>00:00</span>
+                                        <span>00:15</span>
+                                        <span>00:30</span>
+                                        <span>01:00</span>
+                                    </div>
+
+
+                                    <div class="timeline-track">
+
+                                        <div class="timeline-block"></div>
+                                        <div class="timeline-block"></div>
+                                        <div class="timeline-block"></div>
+                                        <div class="timeline-block"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUICK INFO
+             ===================================================== -->
+
+        <section class="video-section">
+
+            <div class="video-container">
+
+                <div class="video-section-heading">
+
+                    <div class="mini-label">
+                        What We Do
+                    </div>
+
+                    <h2>
+                        Editing that makes your content feel alive.
+                    </h2>
+
+                    <p>
+                        We combine clean cuts, visual rhythm, text,
+                        transitions and brand-focused editing to turn
+                        your footage into polished content.
+                    </p>
+
+                </div>
+
+
+                <div class="video-info-grid">
+
+                    <article class="video-info-card">
+
+                        <div class="video-info-icon">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+
+                        <h3>
+                            Clean Editing
+                        </h3>
+
+                        <p>
+                            Remove unnecessary sections, improve pacing
+                            and keep your audience focused on the message.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-info-card">
+
+                        <div class="video-info-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <h3>
+                            Visual Polish
+                        </h3>
+
+                        <p>
+                            Add suitable transitions, text, motion,
+                            effects and visual details where they improve
+                            the final result.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-info-card">
+
+                        <div class="video-info-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h3>
+                            Social Ready
+                        </h3>
+
+                        <p>
+                            Create content suitable for platforms such
+                            as Instagram, TikTok, YouTube and other
+                            digital channels.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             VIDEO TYPES
+             ===================================================== -->
+
+        <section class="video-types-section">
+
+            <div class="video-container">
+
+                <div class="video-section-heading">
+
+                    <div class="mini-label">
+                        Content Types
+                    </div>
+
+                    <h2>
+                        Built for different kinds of content.
+                    </h2>
+
+                    <p>
+                        Whether you need short-form social content or
+                        a promotional business video, CATALYST can adapt
+                        the editing style to your project.
+                    </p>
+
+                </div>
+
+
+                <div class="video-types-grid">
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            01 / REELS
+                        </div>
+
+                        <h3>
+                            Instagram Reels
+                        </h3>
+
+                        <p>
+                            Fast-paced, engaging edits designed for
+                            short-form social media content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            02 / SHORTS
+                        </div>
+
+                        <h3>
+                            TikTok & Short Videos
+                        </h3>
+
+                        <p>
+                            Vertical video editing with strong pacing,
+                            text elements and attention-grabbing visuals.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            03 / BUSINESS
+                        </div>
+
+                        <h3>
+                            Business Videos
+                        </h3>
+
+                        <p>
+                            Professional edits for businesses,
+                            announcements, presentations and marketing.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            04 / PROMO
+                        </div>
+
+                        <h3>
+                            Promotional Videos
+                        </h3>
+
+                        <p>
+                            Showcase your product, service or campaign
+                            through concise and visually engaging content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            05 / CONTENT
+                        </div>
+
+                        <h3>
+                            Content Creator Videos
+                        </h3>
+
+                        <p>
+                            Turn recorded footage into polished,
+                            audience-friendly creator content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-type-card">
+
+                        <div class="video-type-number">
+                            06 / BRAND
+                        </div>
+
+                        <h3>
+                            Brand Content
+                        </h3>
+
+                        <p>
+                            Keep your videos aligned with your brand's
+                            visual identity, tone and overall style.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRICING
+             ===================================================== -->
+
+        <section
+            class="video-pricing-section"
+            id="pricing"
+        >
+
+            <div class="video-container">
+
+                <div class="video-section-heading">
+
+                    <div class="mini-label">
+                        Simple Pricing
+                    </div>
+
+                    <h2>
+                        Professional editing without complicated pricing.
+                    </h2>
+
+                    <p>
+                        Start with a clear price range and discuss the
+                        details of your project with our team.
+                    </p>
+
+                </div>
+
+
+                <div class="video-pricing-card">
+
+                    <div class="video-price-top">
+
+                        <div>
+
+                            <div class="video-price-label">
+                                Video Editing
+                            </div>
+
+                            <h3 class="video-price">
+                                AED <span>45–60</span>
+                            </h3>
+
+                            <div class="video-price-unit">
+                                per video
+                            </div>
+
+                        </div>
+
+
+                        <div class="video-price-badge">
+                            Popular Service
+                        </div>
+
+                    </div>
+
+
+                    <div class="video-price-features">
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Clean and professional video cuts
+                            </span>
+                        </div>
+
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Text and title elements when required
+                            </span>
+                        </div>
+
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Suitable transitions and visual effects
+                            </span>
+                        </div>
+
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Social-media-friendly formats
+                            </span>
+                        </div>
+
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Brand-focused editing
+                            </span>
+                        </div>
+
+
+                        <div class="video-price-feature">
+                            <i class="fa-solid fa-check"></i>
+                            <span>
+                                Project-specific editing approach
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <p class="video-price-note">
+                        Final pricing may vary depending on video length,
+                        complexity, source footage, editing requirements,
+                        effects, captions and other project-specific needs.
+                    </p>
+
+
+                    <div style="margin-top: 28px;">
+
+                        <a
+                            href="#"
+                            class="video-button video-button-primary contact-whatsapp"
+                            data-whatsapp-link
+                            data-whatsapp-message="Hello CATALYST! I am interested in Video Editing. I saw your AED 45–60/video pricing and would like to discuss my requirements."
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Discuss Your Video
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROCESS
+             ===================================================== -->
+
+        <section class="video-process-section">
+
+            <div class="video-container">
+
+                <div class="video-section-heading">
+
+                    <div class="mini-label">
+                        Our Process
+                    </div>
+
+                    <h2>
+                        From footage to finished content.
+                    </h2>
+
+                    <p>
+                        A simple workflow keeps your project organized
+                        while giving our team room to focus on the creative.
+                    </p>
+
+                </div>
+
+
+                <div class="video-process-grid">
+
+                    <article class="video-process-card">
+
+                        <div class="video-process-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Share Your Footage
+                        </h3>
+
+                        <p>
+                            Send your footage, references and requirements
+                            so we understand what you want to create.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-process-card">
+
+                        <div class="video-process-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Plan the Edit
+                        </h3>
+
+                        <p>
+                            We determine the editing direction, pacing,
+                            format and visual approach for your content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-process-card">
+
+                        <div class="video-process-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Edit & Refine
+                        </h3>
+
+                        <p>
+                            Your footage is transformed into a polished
+                            video according to the agreed requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="video-process-card">
+
+                        <div class="video-process-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Final Delivery
+                        </h3>
+
+                        <p>
+                            Once the project is finalized, your completed
+                            video is prepared for its intended platform.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAQ
+             ===================================================== -->
+
+        <section class="video-faq-section">
+
+            <div class="video-container">
+
+                <div class="video-section-heading">
+
+                    <div class="mini-label">
+                        FAQ
+                    </div>
+
+                    <h2>
+                        Questions before you start?
+                    </h2>
+
+                </div>
+
+
+                <div class="video-faq">
+
+                    <details>
+
+                        <summary>
+                            What is included in the AED 45–60 price?
+                        </summary>
+
+                        <p>
+                            The price covers a standard video editing
+                            project. The exact scope depends on the
+                            footage, video length, complexity, effects,
+                            captions and other requirements.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can you edit Instagram Reels and TikTok videos?
+                        </summary>
+
+                        <p>
+                            Yes. We can prepare vertical short-form
+                            videos suitable for social media platforms,
+                            depending on the requirements of the project.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Do I need to provide the footage?
+                        </summary>
+
+                        <p>
+                            In most projects, you provide the original
+                            footage and any important brand assets,
+                            references or instructions. We then handle
+                            the editing process.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can you add text and captions?
+                        </summary>
+
+                        <p>
+                            Yes. Text, titles, captions and other visual
+                            elements can be included when required.
+                            Requirements may affect the final price.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Is every video the same price?
+                        </summary>
+
+                        <p>
+                            No. AED 45–60 is the starting price range for
+                            video editing. Larger or more complex projects
+                            may require a customized quote.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+             ===================================================== -->
+
+        <section class="video-final-cta">
+
+            <div class="video-final-cta-box">
+
+                <h2>
+                    Ready to make your
+                    <span>content stand out?</span>
+                </h2>
+
+                <p>
+                    Send CATALYST your footage, explain what you need,
+                    and let us help turn your raw content into something
+                    worth watching.
+                </p>
+
+
+                <a
+                    href="#"
+                    class="video-button video-button-primary contact-whatsapp"
+                    data-whatsapp-link
+                    data-whatsapp-message="Hello CATALYST! I am interested in Video Editing. I saw your AED 45–60/video pricing and would like to discuss my requirements."
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Contact CATALYST
+                </a>
+
+
+                <div class="video-custom-line">
+                    Every project is fully customized by our expert team.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html">
+
+                    <img
+                        src="assets/logo.png"
+                        alt="CATALYST Logo"
+                        class="footer-logo"
+                    >
+
+                </a>
+
+                <p>
+                    Ignite digital growth.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#services">
+                    Services
+                </a>
+
+                <a href="index.html#work">
+                    Our Work
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    [YOUR PHONE / WHATSAPP]
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    [YOUR EMAIL]
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    [YOUR LOCATION]
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year">2026</span> CATALYST.
+                All rights reserved.
+            </p>
+
+            <p>
+                Ignite digital growth.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BACK TO TOP
+         ========================================================= -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- =========================================================
+         MAIN JAVASCRIPT
+         ========================================================= -->
+
+    <script src="js/script.js" defer></script>
+
+
+    <!-- Current Year -->
+    <script>
+
+        const currentYearElement =
+            document.getElementById("current-year");
+
+        if (currentYearElement) {
+
+            currentYearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+    </script>
+
+</body>
+</html>
